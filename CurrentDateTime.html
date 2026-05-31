@@ -1,0 +1,21 @@
+<%-- index.jsp --%>
+<%@ page language="java"
+         contentType="text/html; charset=ISO-8859-1"
+         pageEncoding="ISO-8859-1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Hello JSP</title>
+</head>
+<body>
+    <!-- Display the heading -->
+    <h2>Hello JSP</h2>
+    <%-- Scriptlet: use Java code to get the current date and time --%>
+    <%
+        java.util.Date now = new java.util.Date();
+    %>
+    <!-- Display date and time using JSP expression tag -->
+    <h2>Now is <%= now %></h2>
+</body>
+</html>
